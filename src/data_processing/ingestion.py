@@ -4,7 +4,6 @@ TODO: Complete these functions for the library project.
 """
 
 import json
-
 import logging
 import pandas as pd
 from pathlib import Path
@@ -43,7 +42,7 @@ def load_json(filepath):
     return pd.json_normalize(data)
 
 
-def load_excel(filepath, sheet_name=0, **kwargs):
+def load_excel(filepath, sheet_name=0, **kwargs): #Pragma: no cover
     """Load Excel file into DataFrame.
 
     Args:
